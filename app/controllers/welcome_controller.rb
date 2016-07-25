@@ -9,8 +9,7 @@ class WelcomeController < ApplicationController
   end
 
   def lorem
-    lorem_ipsum = params["name"]
-    if lorem_ipsum == "batman"
+    if params["name"] == "batman"
       text = "The first time I stole so that I wouldn't starve, yes. I lost many assumptions about the simple nature of right and wrong. And when I traveled I learned the fear before a crime and the thrill of success. But I never became one of them.
 
       I seek the means to fight injustice. To turn fear against those who prey on the fearful.
@@ -23,7 +22,7 @@ class WelcomeController < ApplicationController
 
       Yes. The fire rises."
 
-    elsif lorem_ipsum == "office"
+    elsif params["name"] == "office"
       text = "Sacred cow helicopter view, nor if you want to motivate these clowns, try less carrot and more stick, anti-pattern and we need more paper. Move the needle run it up the flagpole, and are there any leftovers in the kitchen? and personal development, pushback it just needs more cowbell. Can I just chime in on that one strategic fit, nor you better eat a reality sandwich before you walk back in that boardroom, nor level the playing field. Q1 we just need to put these last issues to bed execute , or bleeding edge, yet UI, but wheelhouse. Moving the goalposts touch base, and nail jelly to the hothouse wall. Strategic high-level 30,000 ft view get six alpha pups in here for a focus group, gain traction, so tbrand terrorists, and we need to button up our approach yet we need a paradigm shift. Dog and pony show not enough bandwidth. Paddle on both sides take five, punch the tree, and come back in here with a clear head, and show pony mobile friendly bleeding edge."
     else
       text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum sapien ipsum, id rutrum metus commodo vel. Sed ultrices, nibh a pulvinar malesuada, nunc nibh dapibus felis, vitae malesuada arcu erat eu neque. Phasellus ut viverra eros, at laoreet velit. Ut placerat nisl sed quam condimentum, vel porta dolor mattis. Donec a faucibus nisl. Morbi lobortis turpis et auctor bibendum. Curabitur vulputate turpis in lacus pretium tincidunt. Maecenas sagittis pellentesque tellus vel hendrerit.
